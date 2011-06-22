@@ -1,0 +1,127 @@
+@charset "UTF-8";
+/* - - - - - - - - - - - - - - - - - - - - -
+
+Title :classモジュールCSS
+1.Box Layout Module
+2.Text Layout Module
+3.list Layout Module
+4.Text Module
+5.Anker Module
+
+- - - - - - - - - - - - - - - - - - - - - */
+
+/*--------------------------------------
+    1.Box Layout Module
+---------------------------------------*/
+.fltRight {
+	float: right;
+	margin-left:;
+	margin-bottom:;
+	padding-top:;
+}
+
+.fltLeft {
+	float: left;
+	margin-right:;
+	margin-bottom:;
+	padding-top:;
+}
+
+
+/*floatの流れ解除*/
+.clearFloat { clear: both; }
+/*clear取り消し*/
+.clearClear { clear: none !important; }
+
+/*float取り消し*/
+.fltNone {
+	float: none;
+	}
+
+
+/*clearfix*/
+.clearfix:after {
+	content: "."; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility: hidden;
+}
+.clearfix { zoom:1; }
+
+
+/*横並びナビゲーション*/
+.navigation li {
+	float:left;
+	width: auto;
+	list-style-position: outside;
+	line-height: 1;
+	list-style: none;
+	}
+
+.navigation:after  { /*clearfix*/
+	content: "."; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility: hidden;
+	}
+
+.navigation { zoom:1; }
+
+
+/*--------------------------------------
+  2.Text Layout Module
+---------------------------------------*/
+.eraserMarginTop { margin-top: 0 !important; }
+.eraseMarginBottom { margin-bottom: 0 !important; }
+
+.textAlignR {
+	text-align: right;
+	}
+.textAlignC {
+	text-align: center;
+	}
+	
+.caution {
+	font-weight: bold;
+	color:#FF0033;
+	}
+	
+.surround {
+	padding: 5px 8px;
+	border: solid 1px #DDD;
+	background: #EEE;
+	font-size: 86%;
+	
+	}
+.surround li {
+	padding-left: 12px;
+	background: url(../../images/common/bullet-footer_link-child.gif) no-repeat 0 7px;
+	}
+	
+a.external {
+	background: url(../../images/common/ico-externalLink.gif) no-repeat 100% 50%;
+	padding-right: 20px;
+	}
+	
+
+/* その他 */
+
+.listStyle li {
+	background: url(../images/top/icon2.gif) 0 5px no-repeat;
+	padding:2px 0 2px 17px;
+}
+
+
+/*class指定されたボックス包含レイアウト内で右配置-ページの先頭へ、などの補足リンク-などに使用*/
+.boxLayoutRight { width: 100%; }
+.boxLayoutRight a {
+	display: block;
+	float: right;
+	width: auto;
+	margin-right: 0px;
+	margin-left: auto;
+	text-align: right;
+}
+/*↑class指定されたボックス包含レイアウト内で右配置↑*/

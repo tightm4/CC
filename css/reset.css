@@ -1,0 +1,218 @@
+@charset "UTF-8";
+
+/* - - - - - - - - - - - - - - - - - - - - -
+
+Description : reset setting
+
+1.Universal selector
+2.Text Module
+3.Hypertext Module
+4.List Module
+5.Forms Module
+6.Tables Module
+7.Image Module
+
+- - - - - - - - - - - - - - - - - - - - - */
+
+/*--------------------------------------
+  1.Universal selector
+---------------------------------------*/
+html,body,div,
+h1,h2,h3,h4,h5,h6,
+p,pre,blockquate,address,
+ul,ol,li,dl,dt,dd,
+form,fieldset,legend,object,
+td,th{
+	background-color: transparent;
+	margin:	0;
+	padding: 0;
+	font-size: 100%;
+}
+
+body { background-color: #FFF; }
+
+#container p,
+#container a {
+	font-size: 100%;
+}
+
+/*--------------------------------------
+  2.Text Module
+---------------------------------------*/
+h1 { line-height: 1; }
+h2, h3, h4, h5, h6 {
+	clear: both;
+	line-height: 1;
+	}
+
+pre, code, kbd, samp, acronym {
+	font-size: 100%;
+	}
+	
+address, em { font-style: normal; }
+
+em { font-weight: bold; }
+
+pre { overflow: auto; }
+
+blockquote { display: block; }
+
+cite {
+	display: block;
+	font-style: normal;
+	text-align: right;
+	}
+
+hr {
+	clear: both;
+	margin: 20px 0;
+	border: none;
+	border-top: solid 1px #eee;
+	}
+/*↑floatされたブロックの高さを確保できるようにするのと、CSSを無効にした場合のコンテンツの区切りを表示できるようにする*/
+
+
+/*--------------------------------------
+  3.Hypertext Module
+---------------------------------------*/
+a {	text-decoration: none; }
+
+
+/*--------------------------------------
+  4.List Module
+---------------------------------------*/
+ul, ol { list-style-position: outside; }
+li { list-style: none; }
+
+dt { margin-top: 1em; }
+
+
+/*--------------------------------------
+  5.Forms Module
+---------------------------------------*/
+
+/*--------------------------------------
+  6.Tables Module
+---------------------------------------*/
+table {
+	font-size: 100%;
+	border-collapse: collapse;
+	}
+
+
+/*--------------------------------------
+  7.Image Module
+---------------------------------------*/
+img {
+    vertical-align: bottom;
+} 
+
+* html img {/*IE6*/
+	line-height:1;
+	}
+*:first-child+html img {/*IE7*/
+	line-height:1;
+	}
+
+a img { border: none; }
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - -
+
+Description : font-default setting
+
+1.Universal selector
+2.Text Module
+3.Hypertext Module
+4.List Module
+5.Tables Module
+6.font-size class Module
+
+- - - - - - - - - - - - - - - - - - - - - */
+
+/*--------------------------------------
+  1.Universal selector
+---------------------------------------*/
+html,body,div,
+h1,h2,h3,h4,h5,h6,
+p,pre,blockquate,address,
+ul,ol,li,dl,dt,dd,
+form,fieldset,input,textarea,legend,object,
+td,th {
+	font-size: 100%;
+	}
+
+body {
+	color: #666;
+	font-size: 14px;
+	line-height: 1.7;
+	}
+
+* html body { font-size: 88%; } /*IE6*/
+*:first-child+html body { font-size: 88%; } /*IE7*/
+
+
+/*--------------------------------------
+  2.Text Module
+---------------------------------------*/
+strong { color:; }
+em {}
+blockquate {}
+address { line-height: 1.3; }
+
+
+/*--------------------------------------
+  3.Hypertext Module
+---------------------------------------*/
+a:link { color: #666666;text-decoration: none; }
+a:visited { color: #666666;text-decoration: none;}
+a:hover {
+	color: #6e8bff;
+	text-decoration: underline;
+	}
+	
+#subNav a:link,
+#subNav a:visited {
+	color: #444;
+	}
+#subNav a:hover {
+	color: #5da8dd;
+	}
+#subNav li {
+	font-weight: bold;
+	}
+#subNav li li{
+	font-weight: normal;
+	}
+#subNav li.nowLocation a {
+	color:#000;
+	}
+#subNav li.nowLocation li a:link {
+	color: #444;
+	font-weight: normal;
+	}
+#subNav li.nowLocation li a:hover {
+	color: #000;
+	}
+	
+
+
+/*--------------------------------------
+  4.List Module
+---------------------------------------*/
+dt { font-weight: bold; }
+
+
+/*--------------------------------------
+  5.Tables Module
+---------------------------------------*/
+th { font-weight: bold; }
+
+/*--------------------------------------
+  6.Form Module
+---------------------------------------*/
+input.text,
+imput.image {
+	line-height: 1.125;
+	}

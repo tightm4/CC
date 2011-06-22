@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+/* section */
+#content .tabs {
+    position: relative;
+    margin-top: 5px;
+}
+
+#content .tabs .inner {
+    padding-top: 24px;
+}
+
+#content .tabs .tabs_inner {
+    border: solid 1px #ffb400;
+    padding: 15px;
+}
+
+#content .tabs ul {
+    position: absolute;
+    left: 15px;
+    top: 0;
+}
+
+#content .tabs li {
+    float: left;
+    margin-right: 10px;
+}
+
+#content .tabs .value .stars {
+    display: inline;
+    margin-left: 30px;
+}
+
+#content .tabs h4 {
+    margin: 15px 30px 5px;
+    border-bottom: solid 1px #ddd;
+    padding: 0 0 5px 15px;
+}
+
+#content .tabs .comment {
+    padding: 10px 0;
+}
+
+#content .tabs hr {
+    margin: 0 30px;
+    border-top: dotted 1px #ccc;
+}
+
+#content .tabs .left {
+    float: left;
+    width: 150px;
+    margin-left: 20px;
+}
+
+#content .tabs .left .stars {
+    margin: 30px 0 0 0;
+}
+
+#content .tabs .left .valuation {
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+#content .tabs .right {
+    float: right;
+    width: 480px;
+}
+
+#content .tabs .value .stars {
+
+}
+
+/* コメント */
+
+#content a {
+    outline:none;
+}
+
+#content .tabs .comment {
+    font-size: 95%;
+    padding: 15px 25px;
+    font-family: arial,helvetica,osaka,"MS PGothic",sans-serif;
+    text-align: left;
+    color: #333;
+}
+
+#content .tabs .comment .stars {
+    color: #ffb400;
+    font-size: 120%;
+}
+
+#content .tabs .comment .author {
+    font-weight: bold;
+}
+
+#content .tabs .comment .comment_title {
+    margin-left: 10px;
+}
+
+#content .tabs .comment .date {
+    display: block;
+    float: right;
+    padding-right: 50px;
+    color: #999;
+}
+
+#content .tabs .comment .review {
+    color: #666;
+    margin-left: 25px;
+}
+
+#content .tabs .tab_active {
+    display: inline;
+}
+
+#content .tabs .tab_hidden {
+    display: none;
+}
+
